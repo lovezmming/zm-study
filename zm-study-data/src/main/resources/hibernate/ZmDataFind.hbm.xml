@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated 2018-05-07 11:15:30 by Hibernate Tools 5.2.3.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping >
+    <!--<class catalog="zmstd" name="com.spring.data.database.jpa.entity.ZmDataFind" table="zm_data_find">
+        <id name="id" type="string">
+            <column length="32" name="ID"/>
+            <generator class="assigned"/>
+        </id>
+        <property name="userId" column="USER_ID" />
+        <property name="type" column="TYPE" />
+        <property name="status" column="STATUS" />
+        <property name="content" column="CONTENT" />
+		<property name="tenantId" column="TENANT_ID" />
+		<property name="createTime" column="CREATE_TIME" />
+		<property name="updateTime" column="UPDATE_TIME" />
+    </class>-->
+
+</hibernate-mapping>
