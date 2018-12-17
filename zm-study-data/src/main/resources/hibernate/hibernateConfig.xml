@@ -1,14 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
 <hibernate-configuration>
 	<session-factory>
-		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-		<property name="hibernate.connection.url">jdbc:mysql://192.168.99.28:3306/zmstd</property>
-		<property name="hibernate.connection.username">root</property>
-		<property name="connection.password"></property>
 		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-		<property name="connection.pool_size">100</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/zmstd?serverTimezone=UTC</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">root</property>
 		<property name="hibernate.show_sql">true</property>
 		<property name="hbm2ddl.auto">update</property>
+		<property name="current_session_context_class">org.springframework.orm.hibernate5.SpringSessionContext</property>
+		<property name="jdbc.fetch_size">50</property>
+		<property name="jdbc.batch_size">50</property>
+        <property name="hibernate.connection.pool.size">50</property>
+        <property name="connection.useUnicode">true</property>
+        <property name="connection.characterEncoding">utf-8</property>
 
-		<mapping resource="./hibernate/ZmDataFind.hbm.xml"/>
+		<mapping resource="./hibernate/user.hbm.xml"/>
 	</session-factory>
 </hibernate-configuration>

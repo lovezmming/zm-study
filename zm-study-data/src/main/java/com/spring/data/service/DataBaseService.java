@@ -1,9 +1,10 @@
 package com.spring.data.service;
 
-import org.springframework.web.bind.annotation.RequestParam;
+import java.util.Map;
 
 public interface DataBaseService
 {
-	public Boolean checkAdmin(@RequestParam(value = "name") String name);
+    public Map<String, Object> getUser(Map<String, Object> params) throws Exception;
 
+    public String createUser(Map<String, Object> params) throws Exception;
 }

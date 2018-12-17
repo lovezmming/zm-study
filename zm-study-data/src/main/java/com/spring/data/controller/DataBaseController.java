@@ -1,7 +1,6 @@
 package com.spring.data.controller;
 
 import com.spring.common.application.ApplicationContextFactory;
-import com.spring.common.util.JsonUtil;
 import com.spring.data.service.DataBaseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -26,17 +25,17 @@ public class DataBaseController
 		}
 	}
 
-	@RequestMapping(value = "/admin", method = RequestMethod.GET)
+	@RequestMapping(value = "/userLogin", method = RequestMethod.GET)
 	@ResponseBody
-	public Boolean admin(@RequestParam(value = "name") String name, @RequestParam(value = "type")String type)
+	public Map<String, Object> userLogin(@RequestParam(value = "userName") String userName, @RequestParam(value = "passWord")String passWord)
 	{
-		Boolean result = false;
+		Map<String, Object> result = null;
 		try
 		{
 			Map<String, Object> paramMap = new HashMap<String, Object>();
-			paramMap.put("name", name);
-			paramMap.put("type", type);
-			result = dataBaseService.checkAdmin(JsonUtil.toJsonString(paramMap));
+			paramMap.put("userName", userName);
+			paramMap.put("passWord", passWord);
+			result = dataBaseService.getUser(paramMap);
 		} catch (Exception e)
 		{
 			e.printStackTrace();

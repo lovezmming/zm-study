@@ -1,6 +1,6 @@
 package com.spring.service.service.impl;
 
-import com.spring.service.service.LoginService;
+import com.spring.service.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,21 +12,20 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Service
-public class LoginServiceImpl implements LoginService
+public class UserServiceImpl implements UserService
 {
-    private static final Logger logger = LoggerFactory.getLogger(LoginServiceImpl.class);
+    private static final Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
 
     @Autowired
     private RestTemplate restTemplate;
 
     @Override
-    public Boolean checkAdmin(String name)
+    public Map<String, Object> userLogin(String name)
     {
         Map<String, String> map = new HashMap<>();
         map.put("name", name);
-        ResponseEntity<Boolean> responseEntity = restTemplate.getForEntity("http://ZM-STUDY-DATA/admin?name={name}&type=ADMIN", Boolean.class, map);
-        Boolean callResult = responseEntity.getBody();
-        logger.info("访问checkAdmin结果：" + callResult);
+        ResponseEntity<Map> responseEntity = restTemplate.getForEntity("http://ZM-STUDY-DATA/userLogin?userName={userName}&passWord={passWord}", Map.class, map);
+        Map<String, Object> callResult = responseEntity.getBody();
         return callResult;
     }
 

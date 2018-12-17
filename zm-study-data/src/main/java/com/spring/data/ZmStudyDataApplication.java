@@ -1,17 +1,16 @@
 package com.spring.data;
 
-import org.mybatis.spring.annotation.MapperScan;
-import org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
-@SpringBootApplication(exclude = MybatisAutoConfiguration.class)
+@SpringBootApplication(exclude={ DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
 @EnableEurekaClient
-@MapperScan(basePackages = "com.spring.data.database.mybatis.mapper")
-@EntityScan(basePackages = "com.spring.data.database.mybatis.model")
-public class ZmStudyDataApplication
+public class ZmStudyDataApplication extends SpringBootServletInitializer
 {
 
     public static void main(String[] args)
@@ -19,4 +18,8 @@ public class ZmStudyDataApplication
         SpringApplication.run(ZmStudyDataApplication.class, args);
     }
 
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(ZmStudyDataApplication.class);
+    }
 }

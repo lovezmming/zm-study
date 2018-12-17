@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.spring.data.database.hibernate.entity.User" table="USER">
+		<id name="id" column="ID">
+			<generator class="assigned" />
+		</id>
+		<property name="userName" column="USER_NAME" />
+		<property name="passWord" column="PASS_WORD" />
+		<property name="privatePassWord" column="PRIVATE_PASS_WORD" />
+		<property name="name" column="NAME" />
+		<property name="gender" column="GENDER" />
+		<property name="birthday" column="BIRTHDAY" />
+		<property name="phoneNumber" column="PHONE_NUMBER" />
+		<property name="createTime" column="CREATE_TIME" />
+		<property name="updateTime" column="UPDATE_TIME" />
+	</class>
+
+	<query name="com.spring.data.database.hibernate.entity.User.getUser">
+		<![CDATA[
+		from User u
+		where u.userName = :userName
+		  and u.privatePassWord = :passWord
+		]]>
+	</query>
+
+</hibernate-mapping>

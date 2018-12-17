@@ -12,13 +12,11 @@ import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.util.CellRangeAddress;
 import org.apache.poi.xssf.usermodel.*;
 
 import java.beans.PropertyDescriptor;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.OutputStream;
+import java.io.*;
 import java.lang.reflect.Field;
 import java.math.BigDecimal;
 import java.util.*;
@@ -578,4 +576,103 @@ public class ExcelUtil
         return data;
     }
 
+    /**
+     * copy excel sheet
+     * @param fromFilePaths
+     * @param toFilePath
+     * @param sheetNames
+     * @param excelName
+     * @throws Exception
+     */
+    @SuppressWarnings({ "resource", "deprecation" })
+    public static void copyExcelSheet(List<String> fromFilePaths, String toFilePath, List<String> sheetNames, String excelName) throws Exception
+    {
+        XSSFWorkbook wbCreat = new XSSFWorkbook();
+        if (fromFilePaths != null && fromFilePaths.size() > 0)
+        {
+            for (String fromFilePath : fromFilePaths)
+            {
+                InputStream in = new FileInputStream(fromFilePath);
+                XSSFWorkbook wb = new XSSFWorkbook(in);
+                int sheetNum = wb.getNumberOfSheets();
+                for (int i = 0; i < sheetNum; i++)
+                {
+                    XSSFSheet sheet = wb.getSheetAt(i);
+                    if (sheetNames.contains(sheet.getSheetName()))
+                    {
+                        XSSFSheet sheetCreat = wbCreat.createSheet(sheet.getSheetName());
+                        int sheetMergerCount = sheet.getNumMergedRegions();
+                        for (int ii = 0; ii < sheetMergerCount; ii++)
+                        {
+                            CellRangeAddress cellRangeAddress = sheet.getMergedRegion(ii);
+                            sheetCreat.addMergedRegion(cellRangeAddress);
+                        }
+                        int firstRow = sheet.getFirstRowNum();
+                        int lastRow = sheet.getLastRowNum();
+                        Boolean numberFlag = false;
+                        if ("排除时间".equals(sheet.getSheetName()))
+                        {
+                            numberFlag = true;
+                        }
+                        for (int iii = firstRow; iii <= lastRow; iii++)
+                        {
+                            XSSFRow rowCreat = sheetCreat.createRow(iii);
+                            XSSFRow row = sheet.getRow(iii);
+                            //                            int firstCell = row.getFirstCellNum();
+                            int lastCell = row.getLastCellNum();
+                            for (int j = 0; j < lastCell; j++)
+                            {
+                                XSSFCell toXSSFCell = rowCreat.createCell(j);
+                                XSSFCell fromXSSFCell = row.getCell(j);
+                                if (fromXSSFCell != null)
+                                {
+                                    if (XSSFCell.CELL_TYPE_NUMERIC == fromXSSFCell.getCellType())
+                                    {
+                                        if (numberFlag == Boolean.TRUE && j < 4)
+                                        {
+                                            String val = String.valueOf(fromXSSFCell.getNumericCellValue());
+                                            toXSSFCell.setCellValue(val.substring(0, val.lastIndexOf(".")));
+                                        } else
+                                        {
+                                            XSSFDataFormat df = wbCreat.createDataFormat();
+                                            XSSFCellStyle contentStyle = wbCreat.createCellStyle();
+                                            contentStyle.setDataFormat(df.getFormat("#,#0"));
+                                            toXSSFCell.setCellStyle(contentStyle);
+                                            toXSSFCell.setCellValue(fromXSSFCell.getNumericCellValue());
+                                        }
+                                    } else
+                                    {
+                                        toXSSFCell.setCellValue(fromXSSFCell.getStringCellValue());
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+        FileOutputStream fileOut = new FileOutputStream(toFilePath + excelName + ".xlsx");
+        wbCreat.write(fileOut);
+        fileOut.close();
+    }
+/*
+    public static void main(String[] args)
+    {
+        List<String> fromFilePaths = new ArrayList<String>();
+        fromFilePaths.add("E:/testData/固定规则.xlsx");
+        fromFilePaths.add("E:/testData/其他约束规则.xlsx");
+        List<String> sheetNames = new ArrayList<String>();
+        sheetNames.add("固定规则");
+        sheetNames.add("指定时间");
+        sheetNames.add("排除时间");
+        try
+        {
+            copyExcelSheet(fromFilePaths, "E:/testData/", sheetNames, "其他约束");
+        } catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+*/
 }
