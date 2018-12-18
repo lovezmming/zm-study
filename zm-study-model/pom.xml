@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.spring</groupId>
-    <artifactId>zm-study-service</artifactId>
+    <artifactId>zm-study-model</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
 
-    <name>zm-study-service</name>
+    <name>zm-study-model</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>
@@ -19,19 +19,14 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
-        <!-- common -->
-        <dependency>
             <groupId>com.spring</groupId>
-            <artifactId>zm-study-model</artifactId>
+            <artifactId>zm-study-common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <finalName>zm-study-model</finalName>
+    </build>
 
 </project>

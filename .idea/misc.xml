@@ -3,10 +3,10 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/zm-study-data" />
+    <file type="web" url="file://$PROJECT_DIR$/zm-study-model" />
     <file type="web" url="file://$PROJECT_DIR$/zm-study-server" />
     <file type="web" url="file://$PROJECT_DIR$/zm-study-service" />
     <file type="web" url="file://$PROJECT_DIR$/zm-study-service-slave" />
-    <file type="web" url="file://$PROJECT_DIR$/zm-study-web" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -14,6 +14,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/zm-study-data/pom.xml" />
         <option value="$PROJECT_DIR$/zm-study-server/pom.xml" />
+        <option value="$PROJECT_DIR$/zm-study-model/pom.xml" />
       </list>
     </option>
   </component>

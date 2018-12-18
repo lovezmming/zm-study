@@ -53,10 +53,9 @@
             <optional>true</optional>
         </dependency>
 
-        <!-- common -->
         <dependency>
             <groupId>com.spring</groupId>
-            <artifactId>zm-study-common</artifactId>
+            <artifactId>zm-study-model</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 

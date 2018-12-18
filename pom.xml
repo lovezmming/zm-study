@@ -13,7 +13,8 @@
         <module>zm-study-server</module>
         <module>zm-study-service</module>
         <module>zm-study-common</module>
-        <module>zm-study-web</module>
+        <module>zm-study-data</module>
+        <module>zm-study-model</module>
     </modules>
 
     <parent>

@@ -13,12 +13,6 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
-/**
- * BaseDaoServiceImpl.
- * @author <A HREF="mailto:zming@extremevalue.cn">Ming.Zhu</A>
- * @version 1.0, $Revision: 0$, $Date: 2018年11月30日$
- * @since 1.0
- */
 @Service
 public class BaseDaoServiceImpl implements BaseDaoService
 {

@@ -8,9 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="zm-study-common" />
         <module name="zm-study-data" />
+        <module name="zm-study-model" />
         <module name="zm-study-server" />
         <module name="zm-study-service" />
-        <module name="zm-study-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
