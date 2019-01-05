@@ -49,7 +49,7 @@
           <entry key="java" value="299" />
           <entry key="json" value="1" />
           <entry key="log" value="2" />
-          <entry key="md" value="1" />
+          <entry key="md" value="2" />
           <entry key="mvnw" value="2" />
           <entry key="pom" value="5" />
           <entry key="properties" value="57" />
@@ -63,7 +63,7 @@
           <entry key="HTML" value="3" />
           <entry key="JAVA" value="299" />
           <entry key="JSON" value="1" />
-          <entry key="Markdown" value="1" />
+          <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="Properties" value="57" />
           <entry key="XML" value="116" />
@@ -76,7 +76,7 @@
           <entry key="dummy" value="40" />
           <entry key="html" value="131" />
           <entry key="java" value="4475" />
-          <entry key="md" value="37" />
+          <entry key="md" value="275" />
           <entry key="properties" value="297" />
           <entry key="xml" value="346" />
           <entry key="yml" value="140" />
@@ -87,7 +87,7 @@
           <entry key="CSS" value="31" />
           <entry key="HTML" value="131" />
           <entry key="JAVA" value="4475" />
-          <entry key="Markdown" value="37" />
+          <entry key="Markdown" value="275" />
           <entry key="PLAIN_TEXT" value="40" />
           <entry key="Properties" value="297" />
           <entry key="SQL" value="5" />
@@ -99,17 +99,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="21" column="57" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="57" />
+            <state relative-caret-position="425">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="e#747#748#0" expanded="true" />
                 <element signature="e#800#801#0" expanded="true" />
                 <element signature="e#943#944#0" expanded="true" />
                 <element signature="e#995#996#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="238">
+                <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -206,7 +218,6 @@
         <option value="$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/util/TokenUtils.java" />
         <option value="$PROJECT_DIR$/zm-study-service/pom.xml" />
         <option value="$PROJECT_DIR$/zm-study-data/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/zm-study-service/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/zm-study-service/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/ZmStudyServiceApplication.java" />
@@ -219,6 +230,7 @@
         <option value="$PROJECT_DIR$/zm-study-data/src/main/java/com/spring/data/controller/UserBaseController.java" />
         <option value="$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/service/impl/UserBusinessServiceImpl.java" />
         <option value="$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -960,7 +972,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546682196138" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546682675886" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../shev-course-arrange-service" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -1113,15 +1125,15 @@
       <workItem from="1545298716760" duration="627000" />
       <workItem from="1545882196420" duration="6304000" />
       <workItem from="1546395569143" duration="21893000" />
-      <workItem from="1546567976765" duration="18595000" />
+      <workItem from="1546567976765" duration="19070000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145908000" />
+    <option name="totallyTimeSpent" value="146383000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-12" y="3" width="1936" height="1039" extended-state="1" />
+    <frame x="-12" y="3" width="1936" height="1039" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -1130,7 +1142,7 @@
       <window_info id="Capture Tool" order="3" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info id="Designer" order="5" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.21428572" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.21428572" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32962963" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5010661" side_tool="true" weight="0.3995657" />
@@ -1142,7 +1154,7 @@
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" sideWeight="0.4994618" weight="0.32962963" />
       <window_info anchor="bottom" id="Run" order="9" sideWeight="0.49892357" weight="0.3843648" />
-      <window_info active="true" anchor="bottom" id="Debug" order="10" sideWeight="0.4989339" visible="true" weight="0.35176992" />
+      <window_info anchor="bottom" id="Debug" order="10" sideWeight="0.4989339" visible="true" weight="0.35176992" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="13" />
@@ -1255,16 +1267,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="119">
-            <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1502,14 +1504,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="21" column="57" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="57" />
+        <state relative-caret-position="425">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="e#747#748#0" expanded="true" />
             <element signature="e#800#801#0" expanded="true" />
             <element signature="e#943#944#0" expanded="true" />
             <element signature="e#995#996#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="238">
+            <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
