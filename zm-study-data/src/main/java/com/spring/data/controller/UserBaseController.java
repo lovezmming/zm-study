@@ -18,7 +18,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-public class UserController
+@RequestMapping("/user")
+public class UserBaseController
 {
 
 	@Autowired
@@ -35,21 +36,22 @@ public class UserController
 
 	@RequestMapping(value = "/userLogin", method = RequestMethod.GET)
 	@ResponseBody
-	public UserBaseResponse userLogin(UserBaseRequest request)
+	public UserBaseResponse userLogin(String userName, String passWord, String id)
 	{
 		UserBaseResponse response = new UserBaseResponse();
 		try
 		{
-			Map<String, Object> params = request.getParams();
-			String id = (String) params.get("id");
 			Map<String, Object> result = new HashMap<String, Object>();
 			User user = null;
 			if (TextUtil.isEmpty(id))
 			{
+				Map<String, Object> params = new HashMap<String, Object>();
+				params.put("userName", userName);
+				params.put("passWord", passWord);
 				RecordSet recordSet = userService.getUser(params);
 				if (recordSet.getTotalCount() > 0)
 				{
-					user = (User) recordSet.firstValue();
+					user = (User)recordSet.firstValue();
 				}
 			} else
 			{
@@ -75,13 +77,14 @@ public class UserController
 		return response;
 	}
 
-	@RequestMapping(value = "/register", method = RequestMethod.GET)
+	@RequestMapping(value = "/register", method = RequestMethod.POST)
 	@ResponseBody
-	public UserBaseResponse register(@RequestParam(value = "params") Map<String, Object> params)
+	public UserBaseResponse register(UserBaseRequest request)
 	{
 		UserBaseResponse response = new UserBaseResponse();
 		try
 		{
+			Map<String, Object> params = request.getParams();
 			String name = (String)params.get("name");
 			Long birthday = (Long)params.get("birthday");
 			Boolean gender = (Boolean)params.get("gender");

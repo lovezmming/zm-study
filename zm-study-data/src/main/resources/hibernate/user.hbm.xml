@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-	<class name="com.spring.data.database.hibernate.entity.User" table="USER">
+	<class name="com.spring.model.entity.User" table="USER">
 		<id name="id" column="ID">
 			<generator class="assigned" />
 		</id>
@@ -16,7 +16,7 @@
 		<property name="updateTime" column="UPDATE_TIME" />
 	</class>
 
-	<query name="com.spring.data.database.hibernate.entity.User.getUser">
+	<query name="com.spring.model.entity.User.getUser">
 		<![CDATA[
 		from User u
 		where u.userName = :userName
