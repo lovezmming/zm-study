@@ -1,6 +1,4 @@
-/*
  * Copyright (c) 2015 上海极值信息技术有限公司 All Rights Reserved.
- */
 package com.spring.common.util;
 
 import java.io.ByteArrayInputStream;

@@ -1,6 +1,3 @@
-/*
- * Copyright (c) 2015 上海极值信息技术有限公司 All Rights Reserved.
- */
 package com.spring.common.util;
 
 import java.io.BufferedOutputStream;
@@ -10,13 +7,6 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-/**
- * FileUtil.
- * 
- * @author <A HREF="mailto:ljunjie@qiujieda.com">JunJie.Lu</A>
- * @version 1.0, $Revision: 0$, $Date: Jul 9, 2015$
- * @since 1.0
- */
 public class FileUtil
 {
     public static String getFileExtention(String fileName)

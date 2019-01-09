@@ -27,9 +27,6 @@ public class BaseDaoServiceImpl implements BaseDaoService
         HibernateSessionFactory.closeSession(session);
     }
 
-    /**
-     * @see com.spring.data.database.hibernate.dao.BaseDaoService#find(Class, String)
-     */
     @Override
     public Object find(Class<?> clazz, String id)
     {
@@ -47,9 +44,6 @@ public class BaseDaoServiceImpl implements BaseDaoService
         return obj;
     }
 
-    /**
-     * @see com.spring.data.database.hibernate.dao.BaseDaoService#create(Object)
-     */
     @Override
     public Object create(Object object)
     {
@@ -69,9 +63,6 @@ public class BaseDaoServiceImpl implements BaseDaoService
         return obj;
     }
 
-    /**
-     * @see com.spring.data.database.hibernate.dao.BaseDaoService#update(Object)
-     */
     @Override
     public Object update(Object object)
     {
@@ -91,9 +82,6 @@ public class BaseDaoServiceImpl implements BaseDaoService
         return object;
     }
 
-    /**
-     * @see com.spring.data.database.hibernate.dao.BaseDaoService#delete(Object)
-     */
     @Override
     public void delete(Object object)
     {
@@ -112,9 +100,6 @@ public class BaseDaoServiceImpl implements BaseDaoService
         }
     }
 
-    /**
-     * @see com.spring.data.database.hibernate.dao.BaseDaoService#delete(Class, String)
-     */
     @Override
     public void delete(Class<?> clazz, String id)
     {
@@ -133,9 +118,6 @@ public class BaseDaoServiceImpl implements BaseDaoService
         }
     }
 
-    /**
-     * @see com.spring.data.database.hibernate.dao.BaseDaoService#query(Class, String, Map, Integer, Integer)
-     */
     @SuppressWarnings({ "rawtypes", "unchecked" })
     @Override
     public RecordSet query(Class<?> clazz, String name, Map<String, Object> params, Integer start, Integer max)

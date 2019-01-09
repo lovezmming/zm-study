@@ -1,0 +1,96 @@
+/*
+ * Copyright (c) 2016 上海极值信息技术有限公司 All Rights Reserved.
+ */
+package com.shev.course.arrange.resource.service;
+
+import java.util.Map;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Service;
+
+import com.qiniu.common.QiniuException;
+import com.qiniu.common.Zone;
+import com.qiniu.http.Response;
+import com.qiniu.storage.BucketManager;
+import com.qiniu.storage.Configuration;
+import com.qiniu.storage.UploadManager;
+import com.qiniu.util.Auth;
+import com.shev.course.arrange.common.entity.RecordSet;
+import com.shev.course.arrange.common.util.JsonUtil;
+import com.shev.course.arrange.database.entity.Partner;
+import com.shev.course.arrange.database.service.CourseArrangeService;
+
+/**
+ * QiNiuUploadService.
+ * @author <A HREF="mailto:zming@extremevalue.cn">Ming.Zhu</A>
+ * @version 1.0, $Revision: 0$, $Date: 2018年11月29日$
+ * @since 1.0
+ */
+@Service("service.upload.qiniu")
+@Scope("prototype")
+public class QiNiuUploadService implements UploadService
+{
+    private static final Logger logger = LoggerFactory.getLogger(QiNiuUploadService.class);
+
+    @Autowired
+    private CourseArrangeService courseArrangeService;
+
+    /**
+     * @see UploadService#uploadResource(String, byte[], String, String)
+     */
+    @Override
+    public String uploadResource(String userId, byte[] data, String foler, String fileName) throws Exception
+    {
+        RecordSet partners = courseArrangeService.getPartnerByUserId(userId, Partner.STORAGE);
+        Partner partner = (Partner) partners.firstValue();
+        Map<String, Object> comment = JsonUtil.fromString(partner.getComment());
+        Configuration cfg = new Configuration(Zone.zone0());
+        Auth auth = Auth.create(partner.getAccessKey(), partner.getSecretKey());
+        String key = foler.endsWith("/") ? foler.concat(fileName) : foler.concat("/").concat(fileName);
+        try
+        {
+            Response response = new UploadManager(cfg).put(data, key, auth.uploadToken(String.valueOf(comment.get("bucketName"))));
+            logger.info(response.bodyString());
+        } catch (QiniuException e)
+        {
+            Response response = e.response;
+            logger.error(response.toString());
+            logger.error(response.bodyString());
+            logger.error(e.getMessage(), e);
+        }
+        return String.valueOf(comment.get("domainName")) + "/" + key;
+    }
+
+    /**
+     * @see com.shev.course.arrange.resource.service.UploadService#downLoadResource(java.lang.String, java.lang.String, java.lang.String)
+     */
+    @Override
+    public String downLoadResource(String userId, String foler, String fileName) throws Exception
+    {
+        RecordSet partners = courseArrangeService.getPartnerByUserId(userId, Partner.STORAGE);
+        Partner partner = (Partner) partners.firstValue();
+        Map<String, Object> comment = JsonUtil.fromString(partner.getComment());
+        Auth auth = Auth.create(partner.getAccessKey(), partner.getSecretKey());
+        String key = foler.endsWith("/") ? foler.concat(fileName) : foler.concat("/").concat(fileName);
+        String url = comment.get("domainName") + "/" + key;
+        Boolean isFileExists = false;
+        Configuration cfg = new Configuration(Zone.zone0());
+        BucketManager bucketManager = new BucketManager(auth, cfg);
+        try
+        {
+            bucketManager.stat(String.valueOf(comment.get("bucketName")), key);
+            isFileExists = true;
+        } catch (QiniuException e)
+        {
+            Response response = e.response;
+            logger.error(response.toString());
+            logger.error(response.bodyString());
+            logger.error(e.getMessage(), e);
+        }
+        return url = isFileExists == true ? url : null;
+    }
+
+}

@@ -1,6 +1,3 @@
-/*
- * Copyright (c) 2017 上海极值信息技术有限公司 All Rights Reserved.
- */
 package com.spring.common.util;
 
 import org.elasticsearch.client.transport.TransportClient;
@@ -13,7 +10,7 @@ import java.net.InetAddress;
 public class ElasticSearchUtil
 {
 
-    public TransportClient connect(String ip, Integer port)
+    public static TransportClient connect(String ip, Integer port)
     {
         try
         {
@@ -29,7 +26,7 @@ public class ElasticSearchUtil
         return null;
     }
 
-    public void destory(TransportClient client)
+    public static void destory(TransportClient client)
     {
         if (client != null)
         {

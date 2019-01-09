@@ -1,6 +1,3 @@
-/*
- * Copyright (c) 2017 上海极值信息技术有限公司 All Rights Reserved.
- */
 package com.spring.common.util;
 
 import com.spring.common.util.entity.ExcelExportEntity;
@@ -576,14 +573,6 @@ public class ExcelUtil
         return data;
     }
 
-    /**
-     * copy excel sheet
-     * @param fromFilePaths
-     * @param toFilePath
-     * @param sheetNames
-     * @param excelName
-     * @throws Exception
-     */
     @SuppressWarnings({ "resource", "deprecation" })
     public static void copyExcelSheet(List<String> fromFilePaths, String toFilePath, List<String> sheetNames, String excelName) throws Exception
     {

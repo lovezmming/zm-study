@@ -1,6 +1,3 @@
-/*
- * Copyright (c) 2015 上海极值信息技术有限公司 All Rights Reserved.
- */
 package com.spring.common.util;
 
 import java.text.DateFormat;
@@ -10,12 +7,6 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
-/**
- * DateTimeUtil.
- * @author <A HREF="mailto:ljunjie@qiujieda.com">JunJie.Lu</A>
- * @version 1.0, $Revision: 0$, $Date: Jun 15, 2015$
- * @since 1.0
- */
 public class DateTimeUtil
 {
     public static final String defaultDateFormat = "yyyy-MM-dd HH:mm:ss";
@@ -27,35 +18,18 @@ public class DateTimeUtil
         return new SimpleDateFormat(defaultDateFormat);
     }
 
-    /**
-     * Returns a date in yyyy-MM-dd format.
-     * @return the formatted date.
-     */
     public static String formatDate(long time)
     {
         return getDateFormat().format(getDate(time));
     }
-    
-    /**
-     * Returns a date in yyyy-MM-dd format.
-     * @param date the date to be formatted.
-     * @return the formatted date.
-     */
+
     public static String formatDate(Date date)
     {
         if (date == null)
             return null;
         return getDateFormat().format(date);
     }
-    
-    /**
-     * Format date using the input formatString
-     * if input formatString is wrong, can not parsed by SimpleDateFormat
-     * then user defaultDateFormat
-     * @param date
-     * @param formatString
-     * @return
-     */
+
     public static String formatDate(Date date, String formatString)
     {
         if (date == null)
@@ -72,40 +46,17 @@ public class DateTimeUtil
         
         return df.format(date);
     }
-    
-    /**
-     * Parses date using the input formatString
-     * if input formatString is wrong, can not parsed by SimpleDateFormat
-     * then user defaultDateFormat
-     * @param dateStr the date string
-     * @return the date
-     */
+
     public static Date parseDate(String dateStr)
     {
         return parseDate(dateStr, defaultDateFormat, Locale.getDefault());
     }
-    
-    /**
-     * Parses date using the input formatString
-     * if input formatString is wrong, can not parsed by SimpleDateFormat
-     * then user defaultDateFormat
-     * @param dateStr the date string
-     * @param formatString the format as string
-     * @return the date
-     */
+
     public static Date parseDate(String dateStr, String formatString)
     {
         return parseDate(dateStr, formatString, Locale.getDefault());
     }
 
-    /**
-     * Parses date using the input formatString
-     * if input formatString is wrong, can not parsed by SimpleDateFormat
-     * then user defaultDateFormat
-     * @param dateStr the date string
-     * @param formatString the format as string
-     * @return the date
-     */
     public static Date parseDate(String dateStr, String formatString, Locale locale)
     {
         if (dateStr == null)
@@ -135,12 +86,7 @@ public class DateTimeUtil
     {
         return new Date(time);
     }
-    
-    /**
-     * Zero the date to 0 o'clock.
-     * @param date the date
-     * @return the date at 0 o'clock
-     */
+
     public static Date zeroTime(Date date)
     {
         if (date == null)
@@ -153,14 +99,7 @@ public class DateTimeUtil
         cal.set(calFrom.get(Calendar.YEAR), calFrom.get(Calendar.MONTH), calFrom.get(Calendar.DATE));
         return cal.getTime();
     }
-    
-    /**
-     * Gets the date thru.
-     * @param dateFrom the date from
-     * @param field the calendar field
-     * @param amount the changing amount, negative acceptable
-     * @return the date thru
-     */
+
     public static Date getDateThru(Date dateFrom, int field, int amount)
     {
         if (Calendar.HOUR == field || Calendar.HOUR_OF_DAY == field)
@@ -171,14 +110,7 @@ public class DateTimeUtil
         
         return DateTimeUtil.dateAdd(dateFrom, field, amount);
     }
-    
-    /**
-     * Gets the date thru.
-     * @param dateFrom the date from
-     * @param field the calendar field
-     * @param amount the changing amount, negative acceptable
-     * @return the date thru
-     */
+
     public static Date dateAdd(Date dateFrom, int field, int amount)
     {
         if (amount == 0)
@@ -189,12 +121,7 @@ public class DateTimeUtil
         cal.add(field, amount);
         return cal.getTime();
     }
-    
-    /**
-     * 
-     * @param time
-     * @return
-     */
+
     public static long getTimeMillis(String time) 
     {  
         return getTodayTime(time).getTime();
@@ -216,11 +143,7 @@ public class DateTimeUtil
             throw new RuntimeException(e);
         }
     }
-    
-    /**
-     * @param dateTime
-     * @return
-     */
+
     public static Date getDateTime(String dateTime)
     {
         try 
@@ -233,13 +156,7 @@ public class DateTimeUtil
             throw new RuntimeException(e);
         }
     }
-    
-    /**
-     * get a speficy month and day
-     * @param month
-     * @param day
-     * @return
-     */
+
     public static Date getDate(int month, int day)
     {
         Calendar current = Calendar.getInstance();
@@ -247,13 +164,7 @@ public class DateTimeUtil
         current.set(Calendar.DAY_OF_MONTH, day);
         return current.getTime();
     }
-    
-    /**
-     * get a speficy month and day
-     * @param month
-     * @param day
-     * @return
-     */
+
     public static Date getLastYearDate(int month, int day)
     {
         Calendar current = Calendar.getInstance();
@@ -262,12 +173,7 @@ public class DateTimeUtil
         current.set(Calendar.DAY_OF_MONTH, day);
         return current.getTime();
     }
-    
-    /**
-     * get first day of this month
-     * @param date
-     * @return
-     */
+
     public static Date getFirstDayOfMonth(Date date)
     {
         Calendar calendar = Calendar.getInstance();
@@ -275,13 +181,7 @@ public class DateTimeUtil
         calendar.set(Calendar.DAY_OF_MONTH, 1);
         return calendar.getTime();
     }
-    
-    /**
-     * return the date represents by the dateStr
-     * only support MM/dd/yyyy MM-dd-yyyy yyyy-MM-dd yyyy/MM/dd
-     * @param dateStr -- the date string get from the date calendar in the jsp page
-     * @return
-     */
+
     public static Date parseDateCalDate(String dateStr)
     {
         if (TextUtil.isEmpty(dateStr))
@@ -388,36 +288,22 @@ public class DateTimeUtil
         calendar.setTime(date);
         return calendar.get(Calendar.DAY_OF_WEEK);
     }
-    
-    /**
-     * get 00:00 time of the specified date 's Monday
-     * @param date
-     * @return
-     */
+
     public static Date getTimesWeekmorning(Date date) {
         Calendar cal = Calendar.getInstance();
         cal.setTime(date);
         cal.set(cal.get(Calendar.YEAR), cal.get(Calendar.MONDAY), cal.get(Calendar.DAY_OF_MONTH), 0, 0, 0);
         cal.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY);
         return  cal.getTime();
-        }
+    }
 
-
-    /**
-     * get 24:00 time of the specified date 's Sunday
-     * @param date
-     * @return
-     */
-     public  static Date getTimesWeeknight(Date date) {
+    public  static Date getTimesWeeknight(Date date) {
         Calendar cal = Calendar.getInstance();
         cal.setTime(getTimesWeekmorning(date));
         cal.add(Calendar.DAY_OF_WEEK, 7);
         return cal.getTime();
-     }
-     /**
-      * get 00:00 time of the current day
-      * @return
-      */
+    }
+
     public static Date getTimesmorning() {
         Calendar cal = Calendar.getInstance();
         cal.set(Calendar.HOUR_OF_DAY, 0);
@@ -427,12 +313,7 @@ public class DateTimeUtil
         return cal.getTime();
     }
 
-
-    /**
-     * get 24:00 time of the current day
-     * @return
-     */
-     public static Date getTimesnight() {
+    public static Date getTimesnight() {
         Calendar cal = Calendar.getInstance();
         cal.set(Calendar.HOUR_OF_DAY, 24);
         cal.set(Calendar.SECOND, 0);
@@ -441,11 +322,11 @@ public class DateTimeUtil
         return  cal.getTime();
     }
      
-     public static String getWeek(Date date){   
+    public static String getWeek(Date date){
          SimpleDateFormat sdf = new SimpleDateFormat("EEEE");  
          String week = sdf.format(date);  
          return week;  
-     } 
+    }
      
      public static String getWeek(Date date, Locale locale)
      {
@@ -453,12 +334,7 @@ public class DateTimeUtil
          String week = sdf.format(date);  
          return week; 
      }
-     
-     /**
-      * get 00:00 time of specified date 
-      * @param date
-      * @return
-      */
+
     public static Date getTimesmorning(Date date) {
         Calendar cal = Calendar.getInstance();
         cal.setTime(date);
@@ -469,12 +345,6 @@ public class DateTimeUtil
         return cal.getTime();
     }
 
-
-    /**
-     * get 24:00 time of specified date
-     * @param date
-     * @return
-     */
      public static Date getTimesnight(Date date) {
         Calendar cal = Calendar.getInstance();
         cal.setTime(date);
@@ -484,14 +354,7 @@ public class DateTimeUtil
         cal.set(Calendar.MILLISECOND, 0);
         return  cal.getTime();
     }
-     
-     /**
-      * get date by 24:00 time 
-      * @param hour 
-      * @param minute
-      * @param second
-      * @return
-      */
+
      public static Date getDateByTime(int hour,int minute,int second) {
          Calendar cal = Calendar.getInstance();
          cal.set(Calendar.HOUR_OF_DAY, hour);

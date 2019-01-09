@@ -2,7 +2,9 @@ package com.spring.service.service.impl;
 
 import com.spring.model.request.UserBaseRequest;
 import com.spring.model.response.UserBaseResponse;
+import com.spring.service.mq.kafkaProducer.KafkaSendService;
 import com.spring.service.request.RegisterRequest;
+import com.spring.service.request.SendMessageRequest;
 import com.spring.service.request.UserLoginRequest;
 import com.spring.service.service.UserBusinessService;
 import org.slf4j.Logger;
@@ -25,6 +27,9 @@ public class UserBusinessServiceImpl implements UserBusinessService
 
     @Autowired
     private RestTemplate restTemplate;
+
+    @Autowired
+    private KafkaSendService kafkaSendService;
 
     @Override
     public Map<String, Object> userLogin(UserLoginRequest request)
@@ -57,6 +62,15 @@ public class UserBusinessServiceImpl implements UserBusinessService
         ResponseEntity<UserBaseResponse> userBaseResponse = restTemplate.postForEntity("http://ZM-STUDY-DATA/user/register", formEntity, UserBaseResponse.class);
         UserBaseResponse response = userBaseResponse.getBody();
         return response.getResults();
+    }
+
+    @Override
+    public Map<String, Object> sendMessage(SendMessageRequest request)
+    {
+        kafkaSendService.sendMessage(request.getMessage());
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("message", request.getMessage());
+        return map;
     }
 
 }

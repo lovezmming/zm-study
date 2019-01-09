@@ -1,17 +1,8 @@
-/*
- * Copyright (c) 2018 上海极值信息技术有限公司 All Rights Reserved.
- */
 package com.spring.model.entity;
 
 import java.io.Serializable;
 import java.util.Date;
 
-/**
- * User.
- * @author <A HREF="mailto:zming@extremevalue.cn">Ming.Zhu</A>
- * @version 1.0, $Revision: 0$, $Date: 2018年11月28日$
- * @since 1.0
- */
 public class User implements Serializable
 {
 

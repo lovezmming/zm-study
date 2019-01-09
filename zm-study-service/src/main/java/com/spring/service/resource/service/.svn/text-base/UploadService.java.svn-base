@@ -1,0 +1,35 @@
+/*
+ * Copyright (c) 2016 上海极值信息技术有限公司 All Rights Reserved.
+ */
+package com.shev.course.arrange.resource.service;
+
+/**
+ * UploadService.
+ * @author <A HREF="mailto:zming@extremevalue.cn">Ming.Zhu</A>
+ * @version 1.0, $Revision: 0$, $Date: 2018年11月29日$
+ * @since 1.0
+ */
+public interface UploadService
+{
+    /**
+     * upload resource
+     * @param tenantId
+     * @param content
+     * @param foler
+     * @param fileName
+     * @return
+     * @throws Exception
+     */
+    public String uploadResource(String tenantId, byte[] content, String foler, String fileName) throws Exception;
+
+    /**
+     * downLoad resource
+     * @param userId
+     * @param foler
+     * @param fileName
+     * @return
+     * @throws Exception
+     */
+    public String downLoadResource(String userId, String foler, String fileName) throws Exception;
+
+}

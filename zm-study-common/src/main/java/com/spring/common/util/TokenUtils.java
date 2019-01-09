@@ -10,12 +10,6 @@ import javax.xml.bind.DatatypeConverter;
 import java.security.Key;
 import java.util.Date;
 
-/**
- * TokenUtils.
- * @author <A HREF="mailto:zming@extremevalue.cn">Ming.Zhu</A>
- * @version 1.0, $$Revision: 0$$, $$Date: $$
- * @since 1.0
- */
 public class TokenUtils
 {
 

@@ -1,6 +1,3 @@
-/*
- * Copyright (c) 2015 上海极值信息技术有限公司 All Rights Reserved.
- */
 package com.spring.common.util;
 
 import java.util.ArrayList;
@@ -8,37 +5,14 @@ import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
-/**
- * TextUtil.
- * @author <A HREF="mailto:ljunjie@qiujieda.com">JunJie.Lu</A>
- * @version 1.0, $Revision: 0$, $Date: Jun 15, 2015$
- * @since 1.0
- */
 public class TextUtil
 {
-    /**
-     * Converts a binary array to readable text using Bas64 encoding.
-     * @param input the byte array to be encode.
-     * @return an encoded string.
-     * @see Base64#encode(byte[], int, int)
-     * @since 1.0
-     */
+
     public static String encode(byte[] input)
     {
         return (input == null ? null : Base64.encode(input, 0, input.length));
     }
-    
-    /**
-     * Decodes Base64-encoded string back to a byte array.
-     * This is the reverse of Base64.encode(). Note that if you are decoding
-     * MIME objects, the string may contain carriage returns. Make sure all
-     * carriage returns are stripped before calling this method. You can do
-     * TextUtil.replace(s, "\n", "").
-     * @param input the Base64 encoded string to decode.
-     * @return an decoded byte array.
-     * @see Base64#decode(String)
-     * @since 1.0
-     */
+
     public static byte[] decode(String input)
     {
         return Base64.decode(input);
@@ -53,39 +27,17 @@ public class TextUtil
     {
         return (s == null || s.length() == 0 || s.trim().length() == 0);
     }
-    
-    /**
-     * Expands tokenized string.
-     * It will use System.getProperty() if it cannot find a match in the map.
-     * @param s the string to expand.
-     * @param map the property map.
-     * @return the expanded string.
-     */
+
     public static String expand(String s, Map<String, String> map)
     {
         return TextUtil.expand(s, "${", "}", map);
     }
-    
-    /**
-     * Expands tokenized string.
-     * It will use System.getProperty() if it cannot find a match in the map.
-     * @param s the string to expand.
-     * @param map the property map.
-     * @return the expanded string.
-     */
+
     public static String expand(String s, String begin, String end, Map<String, String> map)
     {
         return expand(s, begin, end, map, false);
     }
-    
-    /**
-     * Expands tokenized string.
-     * It will use System.getProperty() if it cannot find a match in the map.
-     * @param s the string to expand.
-     * @param map the property map.
-     * @param emptyIfMissing replace the variable with empty if missing.
-     * @return the expanded string.
-     */
+
     public static String expand(String s, String begin, String end, Map<String, String> map, boolean emptyIfMissing)
     {
         if (s == null || s.length() == 0)
@@ -122,14 +74,7 @@ public class TextUtil
         
         return buf.toString();
     }
-    
-    /**
-     * substring between two symbol
-     * @param str
-     * @param firstSymbol
-     * @param lastSymbol
-     * @return
-     */
+
     public static String subStringLastIndex(String str, String firstSymbol, String lastSymbol)
     {
         if(TextUtil.isEmpty(str))
@@ -144,24 +89,12 @@ public class TextUtil
             return str.substring(first, last);
         return null;
     }
-    
-    /**
-     * Generates a UUID.
-     * @return a UUID.
-     */
+
     public static String createUUID()
     {
         return UUID.randomUUID().toString();
     }
-    
-    /**
-     * Replaces strings with another string.
-     * This method will work for JRE versions before 1.4.
-     * @param s the original string.
-     * @param replace the string to replace.
-     * @param with the string to replace with.
-     * @return the replaced string.
-     */
+
     public static String replace(String s, String replace, String with)
     {
         if (s == null || s.length() == 0 || replace == null || replace.length() == 0 || with == null || replace.equals(with))
@@ -182,22 +115,14 @@ public class TextUtil
         
         return buf.toString();
     }
-    
-    /**
-     * Trims the string to length.
-     * @param str the string
-     * @return the length to keep
-     */
+
     public static String substring(String str, int length)
     {
         if (str == null || str.length() <= length)
             return str;
         return str.substring(0, length);
     }
-    
-    /**
-     * Gets the left part of the string, the returned string's length will not exceed length parameter, and the omitted parts will be represented as "...".
-     */
+
     public static String omitString(String oriStr, int length)
     {
         if (oriStr == null || oriStr.length() <= length)
@@ -205,14 +130,7 @@ public class TextUtil
         String rtn = oriStr.substring(0,length - 3);
         return rtn + "...";
     }
-    
-    /**
-     * expandNum(12, "0", 4) = "0012"
-     * @param tenantId
-     * @param prefix
-     * @param totalLength
-     * @return
-     */
+
     public static String expandNum(int tenantId, String prefix, int totalLength)
     {
         return String.format("%" + prefix + totalLength + "d", tenantId);

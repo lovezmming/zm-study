@@ -1,6 +1,7 @@
 package com.spring.service.controller;
 
 import com.spring.service.request.RegisterRequest;
+import com.spring.service.request.SendMessageRequest;
 import com.spring.service.request.UserLoginRequest;
 import com.spring.service.service.UserBusinessService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,4 +31,9 @@ public class UserController
         return userService.register(request);
     }
 
+    @RequestMapping(value = "/sendMessage", method = RequestMethod.POST)
+    public Map<String, Object> sendMessage(SendMessageRequest request)
+    {
+        return userService.sendMessage(request);
+    }
 }
