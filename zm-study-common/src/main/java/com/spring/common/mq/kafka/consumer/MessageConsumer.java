@@ -1,4 +1,4 @@
-package com.spring.service.mq.kafkaConsumer;
+package com.spring.common.mq.kafka.consumer;
 
 import com.spring.common.mq.kafka.Sink;
 import org.springframework.cloud.stream.annotation.EnableBinding;

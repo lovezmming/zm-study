@@ -1,4 +1,4 @@
-package com.spring.service.mq.kafkaProducer;
+package com.spring.common.mq.kafka.producer;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.stream.annotation.EnableBinding;

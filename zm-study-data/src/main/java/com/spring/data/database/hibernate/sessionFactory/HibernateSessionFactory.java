@@ -13,7 +13,6 @@ public class HibernateSessionFactory
 
     public static Session openSession()
     {
-        // "./hbm/hibernateConfig.xml"
         ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().configure("./hibernate/hibernateConfig.xml").build();
         SessionFactory sessionFactory = new MetadataSources(serviceRegistry).buildMetadata().buildSessionFactory();
         Session openSession = sessionFactory.openSession();

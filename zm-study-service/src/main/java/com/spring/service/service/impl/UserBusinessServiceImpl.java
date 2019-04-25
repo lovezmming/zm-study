@@ -1,8 +1,8 @@
 package com.spring.service.service.impl;
 
+import com.spring.common.mq.kafka.producer.KafkaSendService;
 import com.spring.model.request.UserBaseRequest;
 import com.spring.model.response.UserBaseResponse;
-import com.spring.service.mq.kafkaProducer.KafkaSendService;
 import com.spring.service.request.RegisterRequest;
 import com.spring.service.request.SendMessageRequest;
 import com.spring.service.request.UserLoginRequest;

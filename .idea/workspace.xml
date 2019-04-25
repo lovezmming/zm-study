@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/zm-study-data/src/main/java/com/spring/data/service/impl/UserServiceImpl.java" line="34" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3689695-ce0a-47e0-8a8a-58558c4d8a51" name="Default Changelist" comment="" />
+    <list default="true" id="a3689695-ce0a-47e0-8a8a-58558c4d8a51" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zm-study-data/src/main/java/com/spring/data/database/hibernate/sessionFactory/HibernateSessionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/zm-study-data/src/main/java/com/spring/data/database/hibernate/sessionFactory/HibernateSessionFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zm-study-model/src/main/java/com/spring/model/ZmStudyModelApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zm-study-model/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zm-study-model/src/test/java/com/spring/model/ZmStudyModelApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zm-study-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/zm-study-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zm-study-server/src/test/java/com/spring/server/ZmStudyServerApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/mq/kafkaConsumer/MessageConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/mq/kafka/consumer/MessageConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/mq/kafkaProducer/KafkaSendService.java" beforeDir="false" afterPath="$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/mq/kafka/producer/KafkaSendService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/service/impl/UserBusinessServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/service/impl/UserBusinessServiceImpl.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/zm-study-common/target/" />
@@ -14,6 +23,7 @@
     <ignored path="$PROJECT_DIR$/zm-study-service-slave/target/" />
     <ignored path="$PROJECT_DIR$/zm-study-server/target/" />
     <ignored path="$PROJECT_DIR$/zm-study-model/target/" />
+    <ignored path="$PROJECT_DIR$/zm-study-dataacess/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,47 +37,51 @@
     <session id="955881271">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="26" />
           <entry key="project.open.time.0" value="6" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.40" value="1" />
-          <entry key="project.open.time.42" value="1" />
-          <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.41" value="2" />
+          <entry key="project.open.time.42" value="2" />
+          <entry key="project.open.time.5" value="3" />
+          <entry key="project.open.time.6" value="3" />
           <entry key="project.open.time.8" value="4" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.opened" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cmd" value="2" />
+          <entry key="cmd" value="3" />
           <entry key="css" value="2" />
           <entry key="gitignore" value="2" />
           <entry key="html" value="3" />
-          <entry key="java" value="379" />
+          <entry key="java" value="412" />
           <entry key="json" value="1" />
-          <entry key="log" value="2" />
-          <entry key="md" value="5" />
+          <entry key="log" value="4" />
+          <entry key="md" value="7" />
           <entry key="mvnw" value="2" />
           <entry key="pom" value="5" />
-          <entry key="properties" value="61" />
-          <entry key="xml" value="120" />
-          <entry key="yml" value="7" />
+          <entry key="properties" value="63" />
+          <entry key="xml" value="135" />
+          <entry key="yml" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="2" />
           <entry key="HTML" value="3" />
-          <entry key="JAVA" value="379" />
+          <entry key="JAVA" value="412" />
           <entry key="JSON" value="1" />
-          <entry key="Markdown" value="5" />
-          <entry key="PLAIN_TEXT" value="8" />
-          <entry key="Properties" value="61" />
-          <entry key="XML" value="125" />
-          <entry key="YAML" value="7" />
+          <entry key="Markdown" value="7" />
+          <entry key="PLAIN_TEXT" value="11" />
+          <entry key="Properties" value="63" />
+          <entry key="XML" value="140" />
+          <entry key="YAML" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -75,24 +89,24 @@
           <entry key="css" value="31" />
           <entry key="dummy" value="40" />
           <entry key="html" value="131" />
-          <entry key="java" value="5368" />
-          <entry key="md" value="1124" />
-          <entry key="properties" value="424" />
-          <entry key="xml" value="384" />
-          <entry key="yml" value="140" />
+          <entry key="java" value="5372" />
+          <entry key="md" value="1366" />
+          <entry key="properties" value="426" />
+          <entry key="xml" value="413" />
+          <entry key="yml" value="243" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="31" />
           <entry key="HTML" value="131" />
-          <entry key="JAVA" value="5368" />
-          <entry key="Markdown" value="1124" />
+          <entry key="JAVA" value="5372" />
+          <entry key="Markdown" value="1366" />
           <entry key="PLAIN_TEXT" value="40" />
-          <entry key="Properties" value="424" />
+          <entry key="Properties" value="426" />
           <entry key="SQL" value="5" />
-          <entry key="XML" value="379" />
-          <entry key="YAML" value="140" />
+          <entry key="XML" value="408" />
+          <entry key="YAML" value="243" />
         </counts>
       </usages-collector>
     </session>
@@ -100,20 +114,15 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/service/impl/UserBusinessServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="23" column="67" lean-forward="true" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="377">
+                <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/mq/kafkaProducer/KafkaSendService.java">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -142,13 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/ZmStudyServiceApplication.java" />
-        <option value="$PROJECT_DIR$/zm-study-data/src/main/java/com/spring/data/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/util/RestTemplateUtil.java" />
-        <option value="$PROJECT_DIR$/zm-study-data/pom.xml" />
-        <option value="$PROJECT_DIR$/zm-study-data/src/main/resources/hibernate/user.hbm.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/zm-study-data/src/main/java/com/spring/data/controller/UserBaseController.java" />
         <option value="$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/entity/RecordSet.java" />
         <option value="$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/entity/RecordCount.java" />
         <option value="$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/enums/ResultEnum.java" />
@@ -165,7 +167,6 @@
         <option value="$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/util/TokenUtils.java" />
         <option value="$PROJECT_DIR$/zm-study-data/src/main/java/com/spring/data/database/hibernate/dao/BaseDaoService.java" />
         <option value="$PROJECT_DIR$/zm-study-data/src/main/java/com/spring/data/database/hibernate/dao/BaseDaoServiceImpl.java" />
-        <option value="$PROJECT_DIR$/zm-study-data/src/main/java/com/spring/data/database/hibernate/sessionFactory/HibernateSessionFactory.java" />
         <option value="$PROJECT_DIR$/zm-study-model/src/main/java/com/spring/model/entity/User.java" />
         <option value="$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/resource/service/UploadService.java" />
         <option value="$PROJECT_DIR$/zm-study-model/src/main/java/com/spring/model/entity/Partner.java" />
@@ -177,7 +178,6 @@
         <option value="$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/util/ElasticSearchUtil.java" />
         <option value="$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/elasticsearch/service/SearchService.java" />
         <option value="$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/elasticsearch/service/ElasticSearchService.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/zm-study-service/pom.xml" />
         <option value="$PROJECT_DIR$/zm-study-common/pom.xml" />
         <option value="$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/mq/kafka/Sink.java" />
@@ -187,12 +187,21 @@
         <option value="$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/controller/UserController.java" />
         <option value="$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/service/UserBusinessService.java" />
         <option value="$PROJECT_DIR$/zm-study-service/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/mq/kafka/KafkaSendService.java" />
         <option value="$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/mq/kafkaConsumer/MessageConsumer.java" />
         <option value="$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/mq/kafkaConsumer/KafkaSendService.java" />
         <option value="$PROJECT_DIR$/zm-study-common/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/mq/kafkaProducer/KafkaSendService.java" />
+        <option value="$PROJECT_DIR$/zm-study-server/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/zm-study-server/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/mq/kafka/KafkaSendService.java" />
+        <option value="$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/mq/kafka/consumer/MessageConsumer.java" />
+        <option value="$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/mq/kafka/producer/KafkaSendService.java" />
         <option value="$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/service/impl/UserBusinessServiceImpl.java" />
+        <option value="$PROJECT_DIR$/zm-study-data/src/main/java/com/spring/data/database/hibernate/sessionFactory/HibernateSessionFactory.java" />
+        <option value="$PROJECT_DIR$/zm-study-dataacess/pom.xml" />
+        <option value="$PROJECT_DIR$/zm-study-dataacess/src/main/java/com/spring/dataacess/ZmStudyDataacessApplication.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -227,10 +236,10 @@
     <option name="jreName" value="#JAVA_INTERNAL" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-12" />
-    <option name="y" value="3" />
-    <option name="width" value="1936" />
-    <option name="height" value="1039" />
+    <option name="x" value="2010" />
+    <option name="y" value="106" />
+    <option name="width" value="1803" />
+    <option name="height" value="967" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -681,12 +690,15 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -694,210 +706,12 @@
               <item name="zm-study" type="b2602c69:ProjectViewProjectNode" />
               <item name="zm-study" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="zm-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zm-study" type="462c0819:PsiDirectoryNode" />
-              <item name="zm-study-common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zm-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zm-study" type="462c0819:PsiDirectoryNode" />
-              <item name="zm-study-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zm-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zm-study" type="462c0819:PsiDirectoryNode" />
-              <item name="zm-study-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zm-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zm-study" type="462c0819:PsiDirectoryNode" />
-              <item name="zm-study-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zm-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zm-study" type="462c0819:PsiDirectoryNode" />
-              <item name="zm-study-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zm-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zm-study" type="462c0819:PsiDirectoryNode" />
-              <item name="zm-study-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zm-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zm-study" type="462c0819:PsiDirectoryNode" />
-              <item name="zm-study-data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zm-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zm-study" type="462c0819:PsiDirectoryNode" />
-              <item name="zm-study-data" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zm-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zm-study" type="462c0819:PsiDirectoryNode" />
-              <item name="zm-study-data" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zm-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zm-study" type="462c0819:PsiDirectoryNode" />
-              <item name="zm-study-data" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zm-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zm-study" type="462c0819:PsiDirectoryNode" />
-              <item name="zm-study-data" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zm-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zm-study" type="462c0819:PsiDirectoryNode" />
-              <item name="zm-study-data" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zm-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zm-study" type="462c0819:PsiDirectoryNode" />
-              <item name="zm-study-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zm-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zm-study" type="462c0819:PsiDirectoryNode" />
-              <item name="zm-study-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zm-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zm-study" type="462c0819:PsiDirectoryNode" />
-              <item name="zm-study-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zm-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zm-study" type="462c0819:PsiDirectoryNode" />
-              <item name="zm-study-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zm-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zm-study" type="462c0819:PsiDirectoryNode" />
-              <item name="zm-study-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zm-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zm-study" type="462c0819:PsiDirectoryNode" />
-              <item name="zm-study-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zm-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zm-study" type="462c0819:PsiDirectoryNode" />
-              <item name="zm-study-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zm-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zm-study" type="462c0819:PsiDirectoryNode" />
-              <item name="zm-study-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zm-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zm-study" type="462c0819:PsiDirectoryNode" />
-              <item name="zm-study-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zm-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zm-study" type="462c0819:PsiDirectoryNode" />
-              <item name="zm-study-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zm-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zm-study" type="462c0819:PsiDirectoryNode" />
-              <item name="zm-study-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="mq" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zm-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zm-study" type="462c0819:PsiDirectoryNode" />
-              <item name="zm-study-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zm-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zm-study" type="462c0819:PsiDirectoryNode" />
-              <item name="zm-study-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zm-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zm-study" type="462c0819:PsiDirectoryNode" />
-              <item name="zm-study-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -907,29 +721,34 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547014306891" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../shev-course-arrange-service" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556177472898" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../XueChuang/iCampus3.0_Training/trainDemo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.spring.common.mq.kafka.producer" />
+      <recent name="com.spring.common.mq.kafka.consumer" />
       <recent name="com.spring.service.mq.kafkaProducer" />
       <recent name="com.spring.service.mq.kafkaConsumer" />
       <recent name="com.spring.service.request" />
-      <recent name="com.spring.service.elasticsearch.service" />
-      <recent name="com.spring.data.service.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\study\zm-study\zm-study-dataacess\src\main\resources" />
+      <recent name="E:\study\zm-study\zm-study-common\src\main\java\com\spring\common\mq\kafka" />
+      <recent name="E:\study\zm-study\zm-study-server\src\main\resources" />
       <recent name="E:\study\zm-study\zm-study-model\src\main\resources\hibernate" />
       <recent name="E:\study\zm-study\zm-study-model\src\main\java\com\spring\model\entity" />
-      <recent name="E:\study\zm-study\zm-study-service\src\main\resources" />
-      <recent name="E:\study\zm-study\zm-study-server\src\main\resources" />
-      <recent name="E:\study\zm-study\zm-study-service\src\main\java\com\spring\service\request" />
     </key>
   </component>
   <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
     <option name="ruleStates">
       <list>
         <RuleState>
@@ -941,7 +760,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ZmStudyServiceApplication">
+  <component name="RunManager" selected="Spring Boot.ZmStudyServerApplication">
     <configuration name="ZmStudyWebApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.spring.web.ZmStudyWebApplication" />
       <module name="zm-study-model" />
@@ -958,6 +777,13 @@
     <configuration name="ZmStudyDataApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="zm-study-data" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.spring.data.ZmStudyDataApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZmStudyDataacessApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="zm-study-dataacess" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spring.dataacess.ZmStudyDataacessApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -1023,6 +849,7 @@
       <item itemvalue="Spring Boot.ZmStudyWebApplication" />
       <item itemvalue="Application.ZmStudyWebApplication" />
       <item itemvalue="Spring Boot.ZmStudyServiceSlaveApplication" />
+      <item itemvalue="Spring Boot.ZmStudyDataacessApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -1060,15 +887,25 @@
       <workItem from="1545298716760" duration="627000" />
       <workItem from="1545882196420" duration="6304000" />
       <workItem from="1546395569143" duration="21893000" />
-      <workItem from="1546567976765" duration="43691000" />
+      <workItem from="1546567976765" duration="43909000" />
+      <workItem from="1547435572736" duration="60000" />
+      <workItem from="1547607766460" duration="2008000" />
+      <workItem from="1550822872324" duration="26000" />
+      <workItem from="1550823142425" duration="101000" />
+      <workItem from="1552535327270" duration="2050000" />
+      <workItem from="1552644338527" duration="56000" />
+      <workItem from="1553501534002" duration="10000" />
+      <workItem from="1554113969665" duration="261000" />
+      <workItem from="1554200078974" duration="98000" />
+      <workItem from="1556161306266" duration="5450000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171004000" />
+    <option name="totallyTimeSpent" value="181342000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-12" y="3" width="1936" height="1039" extended-state="0" />
+    <frame x="2010" y="106" width="1803" height="967" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -1077,10 +914,11 @@
       <window_info id="Capture Tool" order="3" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info id="Designer" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.21428572" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.19506598" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Run Dashboard" sideWeight="0.49971315" weight="0.32932693" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32962963" />
-      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5010661" side_tool="true" weight="0.3995657" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5002869" side_tool="true" weight="0.32932693" />
       <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.4994618" weight="0.32839507" />
       <window_info anchor="bottom" id="Java Enterprise" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
@@ -1088,13 +926,13 @@
       <window_info anchor="bottom" id="Spring" order="6" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" sideWeight="0.4994618" weight="0.32962963" />
-      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.49892357" weight="0.3843648" />
-      <window_info anchor="bottom" id="Debug" order="10" sideWeight="0.4989339" visible="true" weight="0.33849558" />
+      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.49892357" visible="true" weight="0.38341346" />
+      <window_info anchor="bottom" id="Debug" order="10" sideWeight="0.4989339" weight="0.33849558" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="13" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="right" id="Maven Projects" order="1" visible="true" weight="0.10554371" />
+      <window_info anchor="right" id="Maven Projects" order="1" visible="true" weight="0.113597244" />
       <window_info anchor="right" id="Database" order="2" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
@@ -1112,104 +950,155 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/util/JsonUtil.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/util/MD5Util.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/util/RSAUtil.java">
+    <entry file="file://$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/request/SendMessageRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2577" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/util/ServiceUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="68">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/util/SftpUtil.java">
+    <entry file="file://$PROJECT_DIR$/zm-study-service/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3396">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/util/TextUtil.java">
+    <entry file="file://$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/mq/kafkaConsumer/KafkaSendService.java" />
+    <entry file="file://$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/mq/kafka/Processor.java" />
+    <entry file="file://$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/mq/KafkaSendService.java" />
+    <entry file="file://$PROJECT_DIR$/zm-study-common/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-639">
-          <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
+        <state relative-caret-position="374">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/util/Base64.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/util/TokenUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/ZmStudyCommonApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-data/src/main/java/com/spring/data/controller/UserBaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1683">
-          <caret line="99" selection-start-line="99" selection-end-line="99" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1335#1351#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-data/src/main/java/com/spring/data/database/hibernate/dao/BaseDaoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-data/src/main/java/com/spring/data/database/hibernate/dao/BaseDaoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#570#571#0" expanded="true" />
-            <element signature="e#630#631#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-data/src/main/java/com/spring/data/database/hibernate/sessionFactory/HibernateSessionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-data/src/main/java/com/spring/data/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-data/src/main/java/com/spring/data/ZmStudyDataApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-model/src/main/java/com/spring/model/entity/User.java">
+    <entry file="file://$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/mq/kafka/Sink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/mq/kafka/Source.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm-study-server/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm-study-server/src/test/java/com/spring/server/ZmStudyServerApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm-study-server/src/main/java/com/spring/server/ZmStudyServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+          <folding>
+            <element signature="e#355#356#0" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm-study-server/target/classes/application.yml">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm-study-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm-study-server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm-study-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/mq/kafkaConsumer/MessageConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+          <folding>
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm-study-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="670">
+          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/mq/kafka/MessageConsumer.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/mq/kafka/KafkaSendService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/mq/kafka/producer/KafkaSendService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/mq/kafka/consumer/MessageConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/mq/kafkaProducer/KafkaSendService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zm-study-model/src/main/java/com/spring/model/request/UserBaseRequest.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1218,100 +1107,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-model/src/main/java/com/spring/model/entity/Partner.java">
+    <entry file="file://$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/util/ElasticSearchUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="391">
+          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-data/src/main/resources/hibernate/hibernateConfig.xml">
+    <entry file="file://$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/elasticsearch/service/ElasticSearchService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-model/src/main/resources/hibernate/user.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="40" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/request/UserLoginRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-model/src/main/java/com/spring/model/response/UserBaseResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/request/RegisterRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/ZmStudyServiceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-model/src/main/resources/hibernate/partner.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="67" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-data/src/main/java/com/spring/data/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="23" selection-start-line="23" selection-end-line="26" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-data/src/main/java/com/spring/data/service/impl/PartnerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="21" column="70" selection-start-line="21" selection-start-column="70" selection-end-line="21" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-data/src/main/java/com/spring/data/service/PartnerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-data/src/main/java/com/spring/data/controller/PartnerBaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/elasticsearch/SearchService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        <state relative-caret-position="670">
+          <caret line="88" column="29" lean-forward="true" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1324,188 +1130,146 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/resource/service/QiNiuUploadService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
+        <state relative-caret-position="238">
           <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/service/UserBusinessService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="42" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/service/impl/UserBusinessServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/util/ElasticSearchUtil.java">
+    <entry file="file://$PROJECT_DIR$/zm-study-data/src/main/java/com/spring/data/controller/PartnerBaseController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="33" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="33" />
+        <state relative-caret-position="340">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/elasticsearch/service/SearchService.java">
+    <entry file="file://$PROJECT_DIR$/zm-study-model/src/main/java/com/spring/model/response/UserBaseResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm-study-model/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm-study-model/src/main/java/com/spring/model/ZmStudyModelApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm-study-model/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm-study-data/src/main/java/com/spring/data/database/hibernate/sessionFactory/HibernateSessionFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm-study-data/src/main/java/com/spring/data/database/hibernate/dao/BaseDaoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm-study-data/src/main/java/com/spring/data/database/hibernate/dao/BaseDaoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm-study-data/src/main/java/com/spring/data/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm-study-data/src/main/resources/hibernate/hibernateConfig.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/server.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="85" selection-start-line="4" selection-start-column="85" selection-end-line="4" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/common.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-612" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm-study-dataacess/src/main/java/com/spring/dataacess/ZmStudyDataacessApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm-study-dataacess/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm-study-dataacess/mvnw.cmd">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm-study-dataacess/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm-study-data/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="64" column="8" selection-start-line="64" selection-start-column="8" selection-end-line="139" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1156">
-            <caret line="68" column="6" selection-start-line="68" selection-start-column="6" selection-end-line="68" selection-end-column="6" />
+          <first_editor relative-caret-position="377">
+            <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="786">
-          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/elasticsearch/service/ElasticSearchService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4100#4121#0" expanded="true" />
-            <element signature="e#4196#4212#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/request/SendMessageRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="31" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="31" />
-          <folding>
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#435#436#0" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="34" column="11" lean-forward="true" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="30" />
-          <folding>
-            <element signature="e#747#748#0" expanded="true" />
-            <element signature="e#800#801#0" expanded="true" />
-            <element signature="e#942#943#0" expanded="true" />
-            <element signature="e#994#995#0" expanded="true" />
-            <element signature="e#1140#1141#0" expanded="true" />
-            <element signature="e#1192#1193#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-service/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/mq/kafkaConsumer/KafkaSendService.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/mq/kafka/KafkaSendService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/mq/kafka/Processor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/service/UserBusinessService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/mq/kafkaConsumer/MessageConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
-            <element signature="e#487#488#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/mq/KafkaSendService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/mq/kafka/Sink.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-common/src/main/java/com/spring/common/mq/kafka/Source.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-common/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/mq/kafkaProducer/KafkaSendService.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm-study-service/src/main/java/com/spring/service/service/impl/UserBusinessServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="23" column="67" lean-forward="true" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

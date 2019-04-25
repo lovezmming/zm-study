@@ -1,0 +1,23 @@
+#eureka master settings
+server:
+  port: 8001
+  #address: 192.168.99.5
+
+spring:
+  application:
+    name: zm-study-server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
+    register-with-eureka: false
+    fetch-registry: false
+  instance:
+    appname: master
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 15
+
+#logger settings
+logging:
+  file: log/server.log
+  level: info
